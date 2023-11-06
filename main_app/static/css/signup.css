@@ -14,7 +14,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  /* background-color: white; */
   /* width: 50%; */
   width: 100%;
   height: 100vh;
@@ -30,12 +30,30 @@ body {
 }
 
 .signup-form-container form {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   padding: 30px;
+  /* background: rgba(221, 160, 221, 0.5); */
+  background: rbg(255, 255, 255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 36%, rgba(200,200,200,1) 50%, rgba(0,0,0,1) 81%); 
+  border-radius: 7px;
+  /* backdrop-filter: blur(8px); */
+  /* -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+  /* border: 1px solid #ff00ff; */
+}
+
+.signup-form-container .page-header h1 {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 36%, rgba(200,200,200,1) 50%, rgba(0,0,0,1) 81%); 
+  width: 500px;
+  text-align: center;
+  padding: 20px;
+  font-size: 35px;
+  border-radius: 7px;
 }
 
 .signup-form-container tr {
@@ -43,16 +61,26 @@ body {
   gap: 10px;
 }
 
-.signup-form-container tr input {
-  width: 70%;
-  height: 30px;
+.signup-form-container tr td span {
+  color: #b284be;
+  /* text-shadow: #fff .5px 0 3px; */
 }
 
 .signup-form-container tr input {
+  width: 70%;
+  height: 30px;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(45deg, #000, #fff) 1;
+}
+
+.signup-form-container tr input:focus {
   background-color: #000;
   color: #fff;
-  outline: 2px solid #ffdf00;
+  border: 3px solid #ffdf00;
+  outline: none;
   padding-left: 10px;
+  border-radius: 5px;
 }
 
 .signup-form-container tr th {
@@ -61,6 +89,7 @@ body {
 
 .signup-form-container tr label {
   font-size: 20px;
+  color: #000;
 }
 
 .signup-form-container form button {
@@ -70,8 +99,8 @@ body {
   margin-top: 30px;
   font-size: 18px;
   padding: 5px;
-  background-color: #cc7722;
-  border: none;
+  background-color: #ff00ff;
+  border: 2px solid white;
   outline: none;
   border-radius: 4px;
   color: #e5e4e2;
