@@ -1,3 +1,43 @@
 body {
   background-color: red;
 }
+
+header {
+  /* border-bottom: 2px solid white; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* position: fixed; */
+  border-bottom: 2.5px solid transparent;
+  border-image: linear-gradient(0.25turn, rgba(255,255,255, 1), rgba(0,0,0), rgba(255,249,34));
+  border-image-slice: 1;
+  width:98%;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-right: 40px;
+}
+
+.nav-container ul {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-container ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+
+.nav-container ul a:hover {
+  cursor: pointer;
+  color: yellowgreen;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}

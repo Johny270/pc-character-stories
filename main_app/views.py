@@ -37,7 +37,7 @@ def about(request):
 
 @login_required
 def character_index(request):
-  characters =  Character.objects.fitler(user=request.user)
+  characters =  Character.objects.filter(user=request.user)
   return render(request, 'characters/index.html', { 'characters': characters })
 
 @login_required

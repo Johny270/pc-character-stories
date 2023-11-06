@@ -2,26 +2,29 @@
 {% load static %}
 
 {% block head %}
-<link rel="stylesheet" type="text/css" href="{% static 'css/characters/home.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
 {% endblock %}
 
 {% block content %}
-<section>
-  <div class="login-image">
-    <p>Image goes here</p>
-  </div>
+<section class="login-container">
+  <section>
+    {% comment %} <div class="login-image">
+      <p>Image goes here</p>
+    </div> {% endcomment %}
+  </section>
+  {% if not user.is_authenticated  %}
+    <section class="login-form">
+      {% comment %} <div class="login-image"></div> {% endcomment %}
+      <form action="{% url 'home' %}" method="post" class="login">
+        <h1>Login</h1>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="hidden" name="next" value="{{ next }}">
+        <button type="submit" class="login-button">Submit</button>
+      </form>
+    </section>
+  {% endif %}
 </section>
 
-{% if not user.is_authenticated  %}
-  <section>
-    <form action="{% url 'home' %}" method="post" class="login">
-      <h1>Login</h1>
-      {% csrf_token %}
-      {{ form.as_p }}
-      <input type="hidden" name="next" value="{{ next }}">
-      <button type="submit" class="login-button">Submit</button>
-    </form>
-  </section>
-{% endif %}
 
 {% endblock %}

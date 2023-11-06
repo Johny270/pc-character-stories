@@ -1,79 +1,73 @@
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-image: url("../../static/images/634254.png");
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
 }
 
-.login-container {
+.signup-form-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: white;
+  /* width: 50%; */
+  width: 100%;
   height: 100vh;
-  /* background-color: white; */
-}
-
-.login-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 30px;
-  background: rgba(255, 255, 255, 0.31);
-  width: 450px;
-  height: 500px;
-  border-radius: 7px;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  border: 1px solid #cc7722;
 }
 
-.login {
-  opacity: 1;
+.signup-form-container tbody {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+}
+
+.signup-form-container form {
+  border: 2px solid black;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  padding: 30px;
+}
+
+.signup-form-container tr {
+  display: flex;
   gap: 10px;
 }
 
-.login h1 {
-  font-size: 50px;
-  color: #ffdead;
-  text-shadow: #4d4dff 3px 0 10px;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #b5a642;
-  margin-top: 0px;
-}
-
-.login input {
+.signup-form-container tr input {
+  width: 70%;
   height: 30px;
-  width: 250px;
-  outline: none;
-  /* border: none; */
-  margin-left: 5px;
 }
 
-.login label {
-  font-size: 20px;
-  font-weight: bold;
-  margin-right: 5px;
-}
-
-.login input:focus {
+.signup-form-container tr input {
   background-color: #000;
   color: #fff;
   outline: 2px solid #ffdf00;
   padding-left: 10px;
 }
 
-.login button {
+.signup-form-container tr th {
+  margin-top: 5px;
+}
+
+.signup-form-container tr label {
+  font-size: 20px;
+}
+
+.signup-form-container form button {
   width: 50%;
   height: 40px;
-  margin-left: 30px;
-  margin-top: 10px;
+  /* margin-left: 30px; */
+  margin-top: 30px;
   font-size: 18px;
   padding: 5px;
   background-color: #cc7722;
@@ -86,12 +80,12 @@ body {
   animation: jump-shaking 1.33s infinite;
 }
 
-.login button:hover {
+.signup-form-container button:hover {
   transform: scale(1.1);
   border: 2px solid #fff700;
 }
 
-@keyframes jump-shaking {
+/* @keyframes jump-shaking {
   0% { transform: translateX(0) }
   15% { transform: translateY(-5px) }
   35% { transform: translateY(-5px) rotate(13deg) }
@@ -99,4 +93,4 @@ body {
   25% { transform: translateY(-5px) rotate(13deg) }
   35% { transform: translateY(-5px) rotate(-13deg) }
   80% { transform: translateY(0) rotate(0) }
-}
+} */
