@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Character
 from django.contrib.auth.views import LoginView
@@ -21,6 +21,7 @@ class CharacterCreate(LoginRequiredMixin, CreateView):
 class CharacterUpdate(LoginRequiredMixin, UpdateView):
   model = Character
   fields = ['tv_show', 'description']
+  # success_url = '/characters/'
 
 class CharacterDelete(LoginRequiredMixin, DeleteView):
   model = Character
@@ -52,7 +53,7 @@ def signup(request):
     if form.is_valid():
       user = form.save()
       login(request, user)
-      return redirect('cat-index')
+      return redirect('character-index')
     else:
       error_message = 'Invalid sign up - try again'
 

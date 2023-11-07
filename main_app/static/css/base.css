@@ -16,7 +16,7 @@ header {
   border-image: linear-gradient(0.25turn, rgba(255,255,255, 1), rgba(0,0,0), rgba(255,249,34));
   border-image-slice: 1;
   width:98%;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   /* background: rgba(0,0,0, 0.31); */
   background: linear-gradient(90deg, rgba(255,255,255,1) 20%, rgba(200,200,200,1) 33%, rgba(0,0,0,1) 56%); 
   backdrop-filter: blur(8px);

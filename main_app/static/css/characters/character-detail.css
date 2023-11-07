@@ -1,0 +1,74 @@
+body {
+  background: #000;
+  margin: 0;
+}
+
+.details {
+  background: url("../../images/jojo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.character-details {
+  border: 2px solid red;
+  /* background: #fff; */
+  background: rgba(255, 255, 255, .5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  margin-right: 450px;
+  padding: 20px;
+}
+
+.character-actions {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  border: 2px solid black;
+}
+
+.character-details .delete-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  /* border: 2px solid blue; */
+  /* text-align: center; */
+  /* margin: auto 0; */
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.character-details .update-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  /* border: 2px solid blue; */
+  /* text-align: center; */
+  /* margin: auto 0; */
+  /* background-color: ; */
+  color: #000;
+  border-top: 2px solid #008080;
+  border-left: 2px solid #008080;
+  text-decoration: none;
+}
+
+.character-details .update-button:hover {
+  background-color: #008080;
+  color: white;
+}
+
+.character-details p {
+  width: 70%;
+}
