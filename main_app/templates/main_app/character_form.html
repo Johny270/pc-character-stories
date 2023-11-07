@@ -2,26 +2,27 @@
 {% load static %} 
 
 {% block head %}
-<link rel="stylesheet" href="{% static 'css/form.css' %}">
+<link rel="stylesheet" href="{% static 'css/characters/form.css' %}">
 {% endblock %}
 
 {% block content %}
-<div>
-  
+<div class="form-containere">
   <div class="form-legend">
-    {% if character %}
-      <h2>Edit {{ character.name }}</h2>
-    {% else %}
-      <h2>Add a Character</h2>
-    {% endif %}
+    <div class="legend">
+      {% if character %}
+        <h2>Edit {{ character.name }}</h2>
+      {% else %}
+        <h2>Add a Character</h2>
+      {% endif %}
+    </div>
+  
+    <form action="" method="post" class="form-container" autocomplete="off">
+      {% csrf_token %}
+      <table>
+        {{ form.as_table }}
+      </table>
+      <button type="submit" class="form-submit-button">Submit</button>
+    </form>
   </div>
-
-  <form action="" method="post" class="form-container" autocomplete="off">
-    {% csrf_token %}
-    <table>
-      {{ form.as_table }}
-    </table>
-    <button type="submit" class="form-submit-button">Submit</button>
-  </form>
 </div>
 {% endblock %}

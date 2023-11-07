@@ -50,6 +50,7 @@ body {
 
 .characters-container:hover {
   transform: scale(.96);
+  border: 2px solid white;
 }
 
 .characters-container a {

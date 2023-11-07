@@ -2,6 +2,7 @@ body {
   background: url("../../static/images/634254.png");
   background-size: cover;
   background-repeat: no-repeat;
+  margin-top: 0;
 }
 
 header {
@@ -17,10 +18,11 @@ header {
   width:98%;
   margin-bottom: 20px;
   /* background: rgba(0,0,0, 0.31); */
-  background: linear-gradient(90deg, rgba(255,255,255,.51) 4%, rgba(0,0,0,.51) 49%, rgba(200,200,200,.51) 96%); 
+  background: linear-gradient(90deg, rgba(255,255,255,1) 20%, rgba(200,200,200,1) 33%, rgba(0,0,0,1) 56%); 
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  /* position: fixed; */
 }
 
 .nav-container {
