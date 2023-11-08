@@ -27,13 +27,11 @@
           <li><a href="{% url 'character-create' %}">Add a character</a></li>
           <li><a href="{% url 'about' %}">About</a></li>
           <li><a href="{% url 'logout' %}">Log out</a></li>
-          {% else %}
-            <li><a href="{% url 'about' %}">About</a></li>
-            <li><a href="{% url 'home' %}">Login</a></li>
-            <li><a href="{% url 'signup' %}">Sign Up</a></li>
+        {% else %}
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a href="{% url 'home' %}">Login</a></li>
+          <li><a href="{% url 'signup' %}">Sign Up</a></li>
         {% endif %}
-        {% comment %} <li><a href="{% url 'home' %}">Home</a></li> {% endcomment %}
-        {% comment %} <li><a href="/about">Add character</a></li> {% endcomment %}
       </ul>
     </nav>
   </header>

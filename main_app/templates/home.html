@@ -8,13 +8,9 @@
 {% block content %}
 <section class="login-container">
   <section>
-    {% comment %} <div class="login-image">
-      <p>Image goes here</p>
-    </div> {% endcomment %}
   </section>
   {% if not user.is_authenticated  %}
     <section class="login-form">
-      {% comment %} <div class="login-image"></div> {% endcomment %}
       <form action="{% url 'home' %}" method="post" class="login">
         <h1>Login</h1>
         {% csrf_token %}
