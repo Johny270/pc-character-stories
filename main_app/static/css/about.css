@@ -69,15 +69,36 @@ body {
 }
 
 .about-text .about-fade-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 80%;
   background-color: #a349a4;
   background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(24,168,216,1) 100%); 
 }
 
+.about-fade-one span {
+  color: white;
+}
+
 .about-text .about-fade-two {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
   margin-right: 50px;
   background-color: #a349a4;
-  background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(202,44,146,1) 100%)
+  background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(202,44,146,1) 100%);
+  color:  #aaf0d1;
+}
+
+.about-fade-two i {
+  color: white;
+  font-size: 40px;
+}
+.about-fade-two i:hover {
+  color: #00bfff;
 }
 
 .about-text .about-text-image {
@@ -99,4 +120,8 @@ body {
 
 .about-text .about-text-image p {
   font-size: 18px;
+}
+
+.about-text-image h2 {
+  color: #1fcecb;
 }

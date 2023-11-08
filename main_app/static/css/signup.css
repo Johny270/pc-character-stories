@@ -62,7 +62,10 @@ body {
 }
 
 .signup-form-container tr td span {
-  color: #b284be;
+  /* background-color: #000; */
+  /* padding-top: 10px; */
+  color: red;
+  font-size: 17px;
   /* text-shadow: #fff .5px 0 3px; */
 }
 
@@ -123,3 +126,9 @@ body {
   35% { transform: translateY(-5px) rotate(-13deg) }
   80% { transform: translateY(0) rotate(0) }
 } */
+
+.red-text {
+  background-color: #fff;
+  font-size: 25px;
+  color: red;
+}
