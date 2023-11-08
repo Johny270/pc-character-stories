@@ -119,7 +119,8 @@ body {
 }
 
 .about-text .about-text-image p {
-  font-size: 18px;
+  font-size: 17px;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .about-text-image h2 {

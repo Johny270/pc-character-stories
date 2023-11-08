@@ -1,8 +1,14 @@
+@font-face {
+  font-family: fancy;
+  src: url('../fonts/SpookyHollow-z84pX.ttf'),
+}
+
 body {
   background: url("../../static/images/634254.png");
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 0;
+  font-family: "fancy";
 }
 
 header {
@@ -23,6 +29,7 @@ header {
   -webkit-backdrop-filter: blur(8px);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   /* position: fixed; */
+  margin: 0 auto;
 }
 
 .nav-container {
@@ -50,4 +57,26 @@ header {
   color: yellowgreen;
   text-decoration: underline;
   text-underline-offset: 10px;
+}
+
+.logo-container {
+  margin-left: 40px;
+  font-size: 30px;
+  font-family: fancy;
+}
+
+.logo-container div .before {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #66023c;
+}
+
+.logo-container .after {
+  color: #66023c;
+  border-top: 3px solid #66023c;
+  border-right: 3px solid #66023c;
+  border-left: 3px solid #66023c;
+  text-decoration: none;
+  padding: 3px;
 }
