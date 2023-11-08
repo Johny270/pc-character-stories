@@ -1,0 +1,90 @@
+body {
+  background: #000;
+  /* color: white; */
+}
+
+.confirm-delete {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid white; */
+  color: #000;
+  margin: 200px auto;
+  width: 50%;
+  padding: 20px;
+  background: rgb(0,0,0);
+  /* background: rgb(0,0,0); */
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(200,200,200,1) 33%, rgba(254,254,254,1) 42%, rgba(244,244,244,1) 63%, rgba(200,200,200,1) 73%, rgba(5,2,5,1) 97%);
+}
+
+.confirm-delete h2 {
+  text-decoration: underline;
+}
+
+form {
+  margin-top: 50px;
+  display: flex;
+  gap: 40px;
+}
+
+form a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  text-decoration: none;
+  font-weight: bold;
+  color:  #228b22;
+  --c:  #229091;
+  
+  box-shadow: 0 0 0 .1em inset var(--c); 
+  --_g: linear-gradient(var(--c) 0 0) no-repeat;
+  background: 
+    var(--_g) calc(var(--_p,0%) - 100%) 0%,
+    var(--_g) calc(200% - var(--_p,0%)) 0%,
+    var(--_g) calc(var(--_p,0%) - 100%) 100%,
+    var(--_g) calc(200% - var(--_p,0%)) 100%;
+  background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+  outline-offset: .1em;
+  transition: background-size .4s, background-position 0s .4s;
+}
+
+form a:hover {
+  --_p: 100%;
+  transition: background-position .4s, background-size 0s;
+  color: #fff;
+}
+form a:active {
+  box-shadow: 0 0 9e9q inset #0009; 
+  background-color: var(--c);
+  color: #fff;
+}
+
+form button {
+  width: 120px;
+  height: 40px;
+  font-weight: bold;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  color: #000;
+  border-radius: 5px;
+  border: 2px solid #333333;
+  transition: 0.3s;
+  box-shadow: 5px 5px 0px 0px rgba(255, 0, 0, 1);
+  background-color: #ffffff;
+}
+
+form button:hover {
+  box-shadow: 0 0 #333;
+  color: #fff;
+  background-color: #ff0000;
+}
+
+.confirm-delete h2 span {
+  color: #702963;
+  margin-left: 10px;
+  font-size:25px;
+}
+

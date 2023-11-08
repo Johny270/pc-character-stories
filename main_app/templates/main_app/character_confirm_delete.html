@@ -1,23 +1,30 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{%block head%}
+<link rel="stylesheet" type='text/css' href="{% static 'css/characters/confirm-delete.css' %}">
+{% endblock %}
+
 {% block content %}
 
-<div class="page-header">
-  <h1>Delete Character ?</h1>
+<div class="confirm-delete">
+  <div class="page-header">
+    <h1>Delete Character ?</h1>
+  </div>
+  
+  <h2>Are you sure you want to delete <span>{{ character.name }}</span> ?</h2>
+  
+  <form action="" method="post" class="form">
+    {% csrf_token %}
+    <a 
+      href="{% url 'character-detail' character.id %}" 
+      class="cancel-button"
+      style="--c:#E95A49"
+    >
+      Cancel
+    </a>
+    <button type="submit" class="delete-button">Yes - Delete!</button>
+  </form>
 </div>
-
-<h2>Are you sure you want to delete {{ character.name }}?</h2>
-
-<form action="" method="post" class="form">
-  {% csrf_token %}
-  <a 
-    href="{% url 'character-detail' character.id %}" 
-    class="cancel-button"
-  >
-    Cancel
-  </a>
-  <button type="submit" class="delete-button">Yes - Delete!</button>
-</form>
 
 {% endblock %}
