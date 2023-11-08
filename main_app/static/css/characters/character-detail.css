@@ -1,3 +1,71 @@
 body {
-  background: #fff;
+  background: url("../../images/ichigo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.details {
+  color: 000;
+  border-top: 4px solid white;
+  border-right: 4px solid black;
+  border-bottom: 4px solid white;
+  width: 500px;
+  height: 50vh;
+  margin-top: 300px;
+  margin-left: 40px;
+  padding: 15px;
+  /* background: rgba(192, 64, 0, 0.2); */
+  background: rgb(192,64,0, 0.2);
+  background: linear-gradient(90deg, rgba(192,64,0,0.7) 20%, rgba(138,7,7,0.5) 54%, rgba(0,0,0,0.9) 92%);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  /* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.details p {
+  font-size: 20px;
+  color: #fff;
+}
+
+.character-details {
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  border-left: 2px solid white;
+  /* min-height: 100%; */
+  padding: 15px;
+} 
+
+.character-actions {
+  display: flex;
+  gap: 40px;
+  margin-left: 100px;
+}
+
+.character-actions a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 100px;
+  height: 30px;
+  text-decoration: none;
+  color: black;
+}
+
+.character-actions a:hover {
+  background-color: #8A0707;
+  color: white;
+  border: 1px solid white;
+}
+
+.character-details h1 {
+  font-size: 28px;
+  color: #FAF0E6 ;
+}
+
+.character-details h2 {
+  margin-left: 20px;
+  text-decoration: underline;
 }
