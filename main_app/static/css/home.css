@@ -52,6 +52,9 @@ body {
   width: 250px;
   outline: none;
   margin-left: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 10px;
 }
 
 .login label {
@@ -64,7 +67,6 @@ body {
   background-color: #000;
   color: #fff;
   outline: 2px solid #ffdf00;
-  padding-left: 10px;
 }
 
 .login button {

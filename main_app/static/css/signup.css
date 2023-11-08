@@ -65,6 +65,9 @@ body {
   border-width: 2px;
   border-style: solid;
   border-image: linear-gradient(45deg, #000, #fff) 1;
+  padding-left: 10px;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .signup-form-container tr input:focus {
@@ -72,7 +75,6 @@ body {
   color: #fff;
   border: 3px solid #ffdf00;
   outline: none;
-  padding-left: 10px;
   border-radius: 5px;
 }
 
