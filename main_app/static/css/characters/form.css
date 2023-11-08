@@ -1,6 +1,6 @@
 @font-face {
   font-family: dubba;
-  src: url("../../fonts/Kareudon-lg0Ad.otf");
+  src: url("../../fonts/Ghoust\ Outline.otf");
 }
 
 .form-containere {
@@ -10,12 +10,13 @@
   align-items: center;
   width: 100%;
   min-height: 60vh;
+  margin-top: 75px;
   /* border: 2px solid red; */
 }
 
 .form-containere h2 {
   color: #b5a642;
-  font-size: 30px;
+  font-size: 35px;
   text-align: center;
   font-family: "dubba";
 }

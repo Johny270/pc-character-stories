@@ -11,6 +11,8 @@ body {
   min-height: 100vh;
   /* border: 2px solid white; */
   background: #000;
+  margin-top: 75px;
+
 }
 
 .image-container {

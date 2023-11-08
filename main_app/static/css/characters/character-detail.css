@@ -1,3 +1,8 @@
+@font-face {
+  font-family: msaturday;
+  src: url("../../fonts/MagicSaturday-rg1OA.ttf");
+}
+
 body {
   background: url("../../images/ichigo.jpg");
   background-size: cover;
@@ -25,8 +30,9 @@ body {
 }
 
 .details p {
-  font-size: 20px;
+  font-size: 35px;
   color: #fff;
+  font-family: "msaturday";
 }
 
 .character-details {
@@ -68,4 +74,5 @@ body {
 .character-details h2 {
   margin-left: 20px;
   text-decoration: underline;
+  color: #f0e130;
 }
