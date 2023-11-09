@@ -4,7 +4,7 @@
 
 ***
 
-PC Character Stories is an app that was born from the love of pop culture. In facts, pop culture has experienced phenomenal growth in just a few years and has taken a special place in each of our lives. This application is intended to be a reminder of the tender moments of childhood spent watching television shows or just talking with friends about what happened in the last episode of dragon ball(for those of you who know). It is the author hope that everyone finds in it something they can appreciate and that brings the nostalgy of lost memories.
+PC Character Stories is an app that was born from the love of pop culture. In facts, pop culture has experienced phenomenal growth in just a few years and has taken a special place in each of our lives. This application is intended to be a reminder of the tender moments of childhood spent watching television shows or just talking with friends about what happened in the last episode of dragon ball(for those of you who know). It is the author hope that everyone finds in it something they can appreciate and that brings back the nostalgy of lost memories.
 
 ## Getting Started
 
