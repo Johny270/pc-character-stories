@@ -21,7 +21,6 @@ class CharacterCreate(LoginRequiredMixin, CreateView):
 class CharacterUpdate(LoginRequiredMixin, UpdateView):
   model = Character
   fields = ['tv_show', 'description']
-  # success_url = '/characters/'
 
 class CharacterDelete(LoginRequiredMixin, DeleteView):
   model = Character
@@ -29,9 +28,6 @@ class CharacterDelete(LoginRequiredMixin, DeleteView):
 
 class Home(LoginView):
   template_name = 'home.html'
-
-def home(request):
-  return render(request, 'home.html')
 
 def about(request):
   return render(request, 'about.html')
