@@ -46,7 +46,7 @@ body {
 .image-container .about-image {
   width: 70%;
   height: 60%;
-  background: url("../../static/images/Giorno.jpg");
+  background: url("../images/Giorno.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   border-bottom: 0;

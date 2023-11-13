@@ -28,9 +28,10 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'pccharacterstories.fly.dev']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'characterstoriespc.fly.dev']
 
-CSRF_TRUSTED_ORIGINS = ['https://pccharacterstories.fly.dev']
+CSRF_TRUSTED_ORIGINS = ['https://characterstoriespc.fly.dev']
+
 
 
 # Application definition
@@ -133,6 +134,7 @@ STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 
 LOGIN_URL = 'home'
 LOGIN_REDIRECT_URL = 'character-index'
